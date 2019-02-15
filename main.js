@@ -22,3 +22,21 @@
 //       - answerとinputの値が同じだったら「正解です！」とalertで表示する
 //     - 正解が出るまでpromptで問題文を出し続ける
 //     - 正解が出たらWhileループを抜ける
+let num = 0
+while (num < 100) {
+  console.log(num);
+  num++;
+}
+
+const question = `パンはパンでも食べられるパンは？`;
+const answer = `フライパン`;
+let input;
+
+while (answer !== input) {
+  input = prompt(question);
+  if (answer === input) {
+    window.alert("正解です！")
+  } else {
+    window.alert("不正解です！");
+  }
+}
